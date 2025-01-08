@@ -31,15 +31,9 @@ namespace csharp_fundamentals_maps.Main
         {
             return _planets.Select((kv) => new KeyValuePair<string, int>(kv.Key, kv.Key.Length)).ToDictionary();
            
-            Dictionary<string, int> result = new Dictionary<string, int>();
-
             //TODO   Complete this method to return an Dictionary of <string,int> which contains 
             //          the planet name and the number of letters in its name
             //          iterate the _planets using a foreach object to load the result dictionary.
-
-            
-
-            return result;
         }
 
 

@@ -89,8 +89,6 @@ namespace csharp_fundamentals_maps.Main
          */
         public List<string> buildSecretPhrase(int[] numbers)
         {
-            List<string> results = new List<string>();
-            
             // Do not modify the map
             Dictionary<int, string> map = new Dictionary<int, string>();
             map.Add(23, "chicken");
@@ -104,7 +102,6 @@ namespace csharp_fundamentals_maps.Main
             return numbers.Where((num) => map.ContainsKey(num)).Select((num) => map.GetValueOrDefault(num, "")).ToList();
 
             //    // ...and above this comment
-            return results;
         }            
     }
 }
